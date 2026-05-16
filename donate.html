@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Support the Vision - Thuen Lam Hub</title>
+    <link href="d.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="subpage-header">
+    <div class="glass-nav">
+        <div class="dlogo">DRUKYUL</div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="places.html" class="nav-link"> Famous Places</a>
+            <a href="gmc.html" class="nav-link">GMC</a>
+            <a href="donate.html" class="nav-link active">Donate</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="donate-wrapper">
+    <div class="donate-card">
+        <div class="donate-header">
+            <h2>Gelephu Mindfulness City</h2>
+            <p>Your contribution supports the sustainable growth of GMC and the preservation of Bhutanese heritage.</p>
+        </div>
+
+        <div class="quick-amounts">
+            <button type="button" class="amt-option" onclick="selectAmount(50)">Nu 50</button>
+            <button type="button" class="amt-option" onclick="selectAmount(100)">Nu 100</button>
+            <button type="button" class="amt-option" onclick="selectAmount(500)">Nu 150</button>
+        </div>
+
+        <form id="donation-form">
+            <div class="input-field">
+                <label>Custom Contribution (Nu)</label>
+                <input type="number" id="main-amount" placeholder="Enter amount" min="1">
+            </div>
+
+            <div class="input-field">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="input-field">
+                <label>Email Address</label>
+                <input type="text" placeholder="Your email@" required>
+            </div>
+            <div class="input-field">
+                <label>Account Number</label>
+                <input type="text" placeholder="Your account number" required>
+            </div>
+
+            <button type= "button" class="cta-button" onclick="alert('The transaction was successful')">Contribute</button>
+        </form>
+    </div>
+</main>
+
+<script>
+    // Fun interactive script to update the input when buttons are clicked
+    function selectAmount(val) {
+        document.getElementById('main-amount').value = val;
+    }
+</script>
+
+</body>
+</html>

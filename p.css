@@ -1,0 +1,181 @@
+.places-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: #07255d;
+}
+
+.places-layout .pillar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    color: #07255d;
+}
+
+.place-img {
+    height: 220px;            
+    width: 100%;              
+    border-radius: 20px;      
+    margin-bottom: 20px;
+
+    background-size: cover;  
+    background-position: top; 
+    background-repeat: no-repeat;
+    
+    transition: var(--transition);
+
+}
+
+.pillar:hover .place-img {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(30, 52, 94, 0.15);
+}
+
+.subpage-header {
+    height: 120px;
+    background: var(--deep-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+     width: 100%;
+    height: 60vh; 
+    background: linear-gradient(rgba(30, 52, 94, 0.6), rgba(30, 52, 94, 0.3)), 
+                url('images/Haengebrueck-in-Bhutan-mit-Stupa-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.subpage-header h1{
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.glass-nav{
+    position: fixed; 
+    top: 30px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 1100px;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(---glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    border-radius: 100px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    font-family: 'Syne' serif;
+    letter-spacing: 10px;
+    font-size: large;
+    font-weight: 300;
+    color: #08152e;
+    font-style: bold;
+
+}
+
+
+.hero-title{
+    font-family: 'Syne', Times, serif;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 10px;
+    text-shadow: 10px black;
+    animation: heroFade 1.5s ease-out;
+
+}
+.hero-subtitle{
+    font-family: 'Syne' sans-serif;
+    letter-spacing: 5px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+.nav-link{
+    text-decoration: none;
+    font-family: 'Syne' sans-serif;
+    font-weight: 300;
+    font-style: bold;
+    padding: 8px 0;
+    transition: var(---transition) ;
+    margin-left: 25px;
+    color: rgb(18, 21, 51);
+}
+.nav-link:hover, .nav-link.active{
+    color: aliceblue;
+}
+main {
+    padding: 100px 5%;
+}
+
+
+.places-layout .pillar-grid {
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pillar {
+    background: #f8faff;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(74, 144, 226, 0.1);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.place-img {
+    height: 250px; 
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: var(--transition);
+}
+
+iframe{
+    height: 100px;
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.footerbar, .pfooterbar {
+    grid-column: 1 / -1; 
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 1px solid rgba(7, 37, 93, 0.1);
+}
+
+.footerbar a, .pfooterbar a {
+    color: #07255d;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.footerbar a:hover, .pfooterbar a:hover {
+    opacity: 0.7;
+}
+
+ 
+
